@@ -1,0 +1,165 @@
+:root {
+  --hoverRotate: 1deg;
+}
+.mainCard {
+  background: url(../d4kzalw-7e8dc7cc-346c-4e5a-af22-e61f9f5f526f.png),
+    radial-gradient(circle, hsl(var(--tertiary)) 60%, hsl(var(--primary)) 110%);
+  background-blend-mode: soft-light;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background-size: 100%;
+  border: 10px solid #000000;
+  border-radius: 25px;
+  margin: 15px;
+  margin-left: 30px;
+  box-shadow: -6px 4px 4px 2px rgba(0, 0, 0, 0.75);
+  opacity: 0.8;
+  transition-duration: 0.75s;
+  height: min-content;
+  box-sizing: border-box;
+  padding: 0px import;
+  aspect-ratio: 474450 / 263333;
+  cursor: pointer;
+}
+.closeIcon {
+  position: absolute;
+  right: 2px;
+}
+
+.modalImage {
+  transition-duration: 1.5s;
+}
+.modalImage:hover {
+  transform: scale(1.75) translateY(50px);
+}
+
+.mainCard:hover {
+  opacity: 0.95;
+  z-index: 2;
+  transform: scale(1.1) rotate(var(--hoverRotate));
+}
+.imageContainer {
+  overflow: hidden;
+  flex: 1;
+}
+
+.image {
+  position: relative;
+}
+
+.pokemonName {
+  font-weight: bolder;
+  text-align: start;
+  font-size: 2em;
+  text-overflow: ellipsis !important;
+  max-height: 100%;
+  text-align: center;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.pokemonNumber {
+  font-weight: bold;
+  font-size: 1.2rem;
+  align-self: center;
+  justify-self: center;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis !important;
+}
+.infoRow {
+  align-content: center;
+  height: 70px;
+  background: linear-gradient(
+    #00000000 0%,
+    hsl(var(--highlight)) 45%,
+    hsl(var(--highlight)) 55%,
+    #b7455400 100%
+  );
+  margin-bottom: 5px;
+}
+
+.rarity {
+  height: 3em;
+  align-content: center;
+  background: var(--secondary);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+  border: 2px solid #000000;
+  background: url(../d4kzalw-7e8dc7cc-346c-4e5a-af22-e61f9f5f526f.png),
+    hsl(var(--highlight)) 100%;
+  background-blend-mode: overlay;
+  z-index: 10;
+}
+.rarityText {
+  margin-bottom: auto;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 1.2em;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis !important;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  left: -30px;
+  position: relative;
+  padding-top: 0.5em;
+  align-items: center;
+}
+
+.numberDiv {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: url(../d4kzalw-7e8dc7cc-346c-4e5a-af22-e61f9f5f526f.png),
+    hsl(var(--highlight)) 100%;
+  padding: 0.5rem;
+  box-shadow: 0.4em 0.4em 0.4em rgba(0, 0, 0, 0.25);
+  border: 2px solid black;
+  height: 3rem;
+  justify-self: flex-end;
+  background-blend-mode: overlay;
+  display: grid;
+  z-index: 10;
+  position: relative;
+  left: 40px;
+}
+.line {
+  border: 2px solid black;
+  opacity: 1;
+  position: relative;
+  width: 400%;
+}
+.bottomText {
+  color: #000000;
+}
+
+.cardInfo {
+  background: hsl(var(--tertiary), 0.5);
+}
+
+.modalBody {
+  background-color: hsl(var(--dark));
+  padding: 1em;
+  color: hsl(var(--light));
+  border: 10px solid black;
+  border-radius: 10px;
+  width: 110%;
+  align-self: center;
+}
+
+.modalInfo {
+  padding-block: 0.5rem;
+
+  border-bottom: 2px solid black;
+}
+.leftColumn {
+  margin-right: 1rem;
+}

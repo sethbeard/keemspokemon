@@ -1,0 +1,36 @@
+.setCard {
+  background: #1b1b1b;
+  color: antiquewhite;
+  margin: 0.25rem;
+  padding: 1rem;
+  width: auto;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  /* mix-blend-mode: screen; */
+}
+.setCard:hover {
+  margin: 0;
+  position: relative;
+  transform: scale(1.15);
+  border: 0.125rem solid antiquewhite;
+}
+
+.setCard img {
+  mix-blend-mode: overlay;
+  align-self: center;
+  filter: invert();
+}
+
+.allSets {
+  width: 110%;
+  align-self: center;
+  padding-block: 1rem;
+  background: #3d3d3d;
+  border-radius: 20px;
+  align-content: center;
+  justify-content: center;
+}
